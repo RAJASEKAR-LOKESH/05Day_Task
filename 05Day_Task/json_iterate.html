@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var myJson={
+            "name":"Rajasekar L",
+            "rolId":22,
+            "place":"Krishnagiri",
+            "contact":"8610300597",
+            "email":"rajasekarrr323@gmail.com",
+            "skills":["C","C++","HTML","CSS","Javascript","SQL"],
+            "certification":"FSD",
+        }
+        let jsonData = JSON.stringify(myJson)
+        for(let i=0;i<jsonData.length;i++) console.log(jsonData[i]);
+        
+        for(key in jsonData) console.log(jsonData[key]);
+
+        for(key of jsonData) console.log(key);
+
+    </script>
+</body>
+</html>
